@@ -1,19 +1,99 @@
-# React + Vite
+# ✅ TaskFlow — Modern To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive task management app built with **React 19** and **Tailwind CSS v4**. Tasks persist across sessions via `localStorage`, so nothing is lost on refresh.
 
-Currently, two official plugins are available:
+> 🔗 **[Live Demo →](https://todo-nesh.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+| Feature                | Description                                                               |
+| ---------------------- | ------------------------------------------------------------------------- |
+| **Add Tasks**          | Create tasks instantly with a single click                                |
+| **Mark Complete**      | Toggle between _pending_ and _done_ — completed tasks get a strikethrough |
+| **Delete Tasks**       | Remove tasks you no longer need                                           |
+| **Persistent Storage** | Tasks survive page refreshes via `localStorage`                           |
+| **Responsive Design**  | Fully responsive — looks great on mobile, tablet, and desktop             |
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **React 19** — Component-based UI with hooks (`useState`, `useRef`)
+- **Vite 8** — Lightning-fast dev server and optimized production builds
+- **Tailwind CSS v4** — Utility-first styling with the new Vite plugin
+- **React Icons** — Material Design icon set for interactive delete buttons
+- **React Compiler** — Enabled for automatic performance optimizations
+- **localStorage API** — Client-side data persistence with no backend required
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── main.jsx              # App entry point
+├── App.jsx               # Root component
+├── index.css             # Global styles & Tailwind import
+└── components/
+    ├── Container.jsx     # State management & business logic
+    ├── NewTask.jsx       # Task input form
+    └── Tasks.jsx         # Task list with toggle & delete
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** ≥ 18
+- **npm** ≥ 9
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/AmroAlneshmi/toDo.git
+cd toDo
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`.
+
+### Production Build
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 🌐 Deployment
+
+This project is deployed on **[Vercel](https://vercel.com)**. Every push to `main` triggers an automatic deployment.
+
+To deploy your own:
+
+1. Fork this repository
+2. Import the repo on [vercel.com/new](https://vercel.com/new)
+3. Vercel auto-detects Vite — no configuration needed
+4. Your app is live 🎉
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<p align="center">
+  Built with ❤️ by <a href="https://github.com/AmroAlneshmi">Amro Alneshmi</a>
+</p>
